@@ -1,0 +1,511 @@
+
+:root {
+    --main-bg-color: #2a1a4a;
+    --main-text-color: #fff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #6b05b5, #9c3eff);
+    line-height: 1.6;
+    transition: background-color 0.3s ease;
+    color: var(--main-text-color);
+    
+}
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+header {
+    background: linear-gradient(to bottom, #ff6ac1, #cc66ff);
+    color: var(--main-text-color);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffd700;
+}
+
+.services-section {
+    text-align: center;
+    padding: 40px 0;
+    color: #000;
+}
+
+.services-section h3,
+.services-section h3:hover {
+    color: #000 !important;
+}
+
+.services-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service-info {
+    display: none;
+}
+
+.service-info.active {
+    display: block;
+    color: #000;
+}
+
+.service-btn {
+    background: linear-gradient(to bottom, #ff6ac1, #cc66ff);
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.service-btn:hover {
+    background: linear-gradient(to bottom, #ff6a91, #c6537b);
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #fff, #e6e6e6);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+    border: 1px solid #ddd;
+    animation: pulse 1.8s infinite;
+}
+
+section h2 {
+    color: #ff6ac1;
+}
+
+section p {
+    color: #555;
+    line-height: 1.4;
+}
+
+section:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+    animation: none;
+}
+
+footer {
+    background: linear-gradient(to bottom, #ff6ac1, #cc66ff);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    /* position: fixed; */ /* Schimbă fixed cu relative */
+    position: relative; /* Adaugă această linie */
+    /* bottom: 0; */ /* Și elimină această linie */
+    width: 100%;
+}
+
+
+footer a {
+    color: #ffd700;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+.about-section h3,
+.about-section ul {
+    color: #000;
+}
+
+.main-section h3 {
+    color: #000 !important;
+}
+
+.check-this-section {
+    text-align: center;
+    padding: 40px 0;
+    color: #000;
+}
+
+.check-this-section h2,
+.check-this-section p {
+    color: #000;
+}
+
+.check-this-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.check-this-btn {
+    background: linear-gradient(to bottom, #ff6ac1, #cc66ff);
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.check-this-btn:hover {
+    background: linear-gradient(to bottom, #ff6a91, #c6537b);
+    transform: scale(1.1);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+    50% {
+        transform: scale(1.005);
+        box-shadow: 0 0 23px rgba(0, 0, 0, 0.35);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.banner img {
+    max-width: 8%;
+    height: auto;
+    position: relative;
+    top: -10px;
+    margin-right: 10px;
+}
+
+.robot {
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+#contact-form {
+    max-width: 400px;
+    margin: 20px auto;
+    display: grid;
+    gap: 10px;
+    background: linear-gradient(to bottom, #ff6ac1, #cc66ff);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+label {
+    font-weight: bold;
+    color: #fff;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+input[type="submit"] {
+    background: linear-gradient(to bottom, #ff6ac1, #cc66ff);
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(to bottom, #ff6a91, #c6537b);
+    transform: scale(1.1);
+}
+
+.service-btn:hover {
+    background: linear-gradient(to bottom, #ff6a91, #c6537b);
+    transform: scale(1.1);
+}
+.service-btn {
+    background: linear-gradient(to bottom, #ff6ac1, #cc66ff);
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.service-btn:hover {
+    background: linear-gradient(to bottom, #ff6a91, #c6537b);
+    transform: scale(1.1);
+}
+.services-info {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px; /* Micsorează marginea superioară a chenarului */
+}
+
+.service-info {
+    display: none;
+    opacity: 0;
+    background: linear-gradient(45deg, #f2f2f2, #c9c9c9); /* Gradient cu nuanțe de gri pentru fundalul informativ */
+    background-size: 200% 200%;
+    background-position: 100% 0;
+    color: #333; /* Culoare gri închis pentru text */
+    padding: 10px; /* Dimensiune mai mică pentru chenar */
+    border-radius: 6px; /* Colțuri mai rotunjite */
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.5s ease, box-shadow 0.3s ease, background-position 0.5s ease;
+}
+
+.service-info.active {
+    display: block;
+    opacity: 1;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    background-position: 0 0;
+}
+
+.service-info h3 {
+    color: #333; /* Culoare gri închis pentru titlu */
+    font-size: 1.3em; /* Dimensiune mai mare pentru titlu */
+    margin-bottom: 8px; /* Spațiu mai mare între titlu și text */
+}
+
+.service-info p {
+    color: #555; /* Culoare gri deschis pentru text */
+    line-height: 1.5; /* Spațierea rândurilor mai mare pentru ușurință în citire */
+}
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Mărește marginea superioară între butoane și chenar */
+}
+.service-info {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #fff, #e6e6e6);
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-info:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-info h3 {
+    color: #ff6ac1;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.service-info p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.service-info ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.service-info ul li {
+    margin-bottom: 10px;
+}
+
+.service-info ul li::before {
+    content: "\2022";
+    color: #ff6ac1;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+.services-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.service-info {
+    width: 30%;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.service-info.active {
+    display: block;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.service-info h3 {
+    color: #ff6ac1;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.service-info p {
+    color: #555;
+    line-height: 1.4;
+}
+
+.service-info ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.service-info ul li {
+    margin-bottom: 10px;
+}
+
+/* Adăugare animație pentru informații pachet */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.request-offer-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(to bottom, #ff6ac1, #cc66ff);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adaugare umbra */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.request-offer-btn:hover {
+    background: linear-gradient(to bottom, #ff6a91, #c6537b);
+    transform: scale(1.1);
+    color: #d74cdb; /* Culoare diferita pentru text la hover */
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Umbra mai pronuntata la hover */
+}
+.menu-btn-container {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 2000px; /* Spațiu între buton și meniu */
+    transition: margin-right 0.3s ease; /* Adăugați tranziția pentru margin-right */
+}
+
+.menu-btn-container.change {
+    margin-right: 1370px; /* Ajustați valoarea la care să se mute când este apăsat */
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.menu-btn-container.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.menu-btn-container.change .bar2 {
+    opacity: 0;
+}
+
+.menu-btn-container.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+/* Stil pentru meniul de navigare */
+.nav-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #333;
+    padding-top: 60px;
+    transition: left 0.3s ease, z-index 0.3s ease;
+    z-index: 9999;
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    padding: 15px;
+    text-align: center;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+

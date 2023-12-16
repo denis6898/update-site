@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...." crossorigin="anonymous">
+    <script src="script.js" defer></script>
+    <title>About Us</title>
+    <style>
+        .about-section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .about-section:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-intro {
+            text-align: center;
+        }
+
+        .about-intro h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .about-intro p {
+            color: #555;
+            line-height: 1.4;
+        }
+
+        .about-intro ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .about-intro ul li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <img src="logo.gif" alt="SipyScript Logo">
+        </div>
+        <div class="menu-btn-container" onclick="toggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-section">
+        <div class="about-intro">
+            <h2>Welcome to Professional Web Development</h2>
+            <p>
+                Welcome to the world of professional web development! I specialize in creating stunning and responsive websites tailored to your needs.
+                Whether you're a startup, a small business, or an individual, I offer three distinct packages – Starter, Professional, and Premium – each designed
+                to bring your online presence to life. From sleek designs to interactive features, I've got you covered. Let's collaborate and turn your
+                digital vision into a reality!
+            </p>
+            <h3>Technologies I Work With:</h3>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 SipyScript</p>
+    </footer>
+</body>
+
+</html>

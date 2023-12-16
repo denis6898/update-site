@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...." crossorigin="anonymous">
+    <script src="script.js" defer></script>
+    <title>SipyScript - Professional Web Development</title>
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <img src="logo.gif" alt="SipyScript Logo">
+        </div>
+        <div class="menu-btn-container" onclick="toggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main-section">
+        <h2>Welcome to SipyScript</h2>
+        <p>
+            Welcome to SipyScript, your professional web development partner.
+        </p>
+        <h3>Our Affordable Services</h3>
+        <div class="services-container">
+            <button class="service-btn" onclick="showServiceInfo('starter-info')">Starter Pack</button>
+            <button class="service-btn" onclick="showServiceInfo('professional-info')">Professional Pack</button>
+            <button class="service-btn" onclick="showServiceInfo('premium-info')">Premium Pack</button>
+        </div>
+        <div class="services-info">
+            <div class="service-info" id="starter-info">
+                <h3>Starter Pack</h3>
+                <p>
+                    Number of Pages: 3<br>
+                    Revisions: 1<br>
+                    Features:
+                    <ul>
+                        <li>Responsive Design</li>
+                        <li>Contact Form</li>
+                        <li>SEO Optimization</li>
+                    </ul>
+                    Technologies:
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    Support: 30 days post-launch support
+                </p>
+                <ul><a href="contact.html" class="request-offer-btn">REQUEST OFFER!!!</a></ul>
+            </div>
+            <div class="service-info" id="professional-info">
+                <h3>Professional Pack</h3>
+                <p>
+                    Number of Pages: 5<br>
+                    Revisions: 2<br>
+                    Features:
+                    <ul>
+                        <li>Responsive Design</li>
+                        <li>Contact Form</li>
+                        <li>SEO Optimization</li>
+                        <li>Image Gallery</li>
+                    </ul>
+                    Technologies:
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    Support: 60 days post-launch support
+                    <ul><a href="contact.html" class="request-offer-btn">REQUEST OFFER!!!</a></ul>
+                </p>
+            </div>
+            <div class="service-info" id="premium-info">
+                <h3>Premium Pack</h3>
+                <p>
+                    Number of Pages: 10<br>
+                    Revisions: 4<br>
+                    Features:
+                    <ul>
+                        <li>Responsive Design</li>
+                        <li>Contact Form</li>
+                        <li>SEO Optimization</li>
+                        <li>Image Gallery</li>
+                        <li>Custom Web Development</li>
+                    </ul>
+                    Technologies:
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    Support: 90 days post-launch support
+                    <ul><a href="contact.html" class="request-offer-btn">REQUEST OFFER!!!</a></ul>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-section">
+        <h2>Check This</h2>
+        <div class="services-container">
+            <button class="service-btn" onclick="redirectToSite('https://sweet-fairy-50183c.netlify.app/')">Project Game</button>
+            <button class="service-btn" onclick="redirectToSite('https://sipyshop.bigcartel.com')">SipyShop</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 SipyScript</p>
+    </footer>
+</body>
+
+</html>
